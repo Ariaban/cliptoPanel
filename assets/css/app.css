@@ -8601,6 +8601,16 @@ ul.contentPlaceUL {
   margin: 8px 0;
   padding: 4px 0 0 0; }
 
+.channelImgPlace {
+  display: block;
+  position: absolute;
+  top: 160px;
+  right: 40px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  z-index: 10; }
+
 .channelImg {
   width: 6.875rem;
   max-width: 6.875rem;
@@ -8610,6 +8620,7 @@ ul.contentPlaceUL {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  border: 3px #f2f2f2 solid;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -8650,8 +8661,8 @@ ul.contentPlaceUL {
 
 .channelHeaderImg {
   width: 100%;
-  height: 11.25rem;
-  max-height: 11.25rem;
+  height: 15rem;
+  max-height: 15rem;
   background-image: url(../images/imgBlank.jpg);
   background-position: center center;
   background-size: cover;
@@ -8661,7 +8672,8 @@ ul.contentPlaceUL {
   -moz-border-radius: 4px;
   margin: 0.3125rem 0;
   padding: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 9; }
   .channelHeaderImg .blockRowEdit {
     display: block;
     position: relative;
