@@ -919,7 +919,7 @@ a, [ui-sref], [zf-open], [zf-close], [zf-toggle] {
         margin-left: 0.8rem;
         float: none; }
 
-.button, .button-group > li > a, .button-group > li > label, .button-group > li > button, .btnDefaultEmpty, .btnDefault, .btnAlarm, .btnAlarmExtend, .btnUnLock, .btnLock, .btnOk, .btnRe, .btnCancel, .btnEnter, .btnAdd, .btnAddFile, .btnAddFileXML, .btnReturn, .btnFormUp, .btnFormDefault, .btnFormSmall, .btnCardSmall, a.btnCardSmall, a.btnCardAction, a.btnCardAction.ok, a.btnCardAction.nok, .btnSearchForm, .btnSearchFormG, .btnSearch, .btnUploadPic, .btnDefaultFile, form input[type="file"].btnDefaultFile,
+.button, .button-group > li > a, .button-group > li > label, .button-group > li > button, .btnDefaultEmpty, .btnDefault, .btnAlarm, .btnAlarmExtend, .btnUnLock, .btnLock, .btnOk, .btnRe, .btnCancel, .btnEnter, .btnAdd, .btnAddFile, .btnAddFileXML, .btnReturn, .btnFormUp, .btnFormDefault, .btnFormSmall, .btnCardSmall, form input[type="file"].btnCardSmall, input[type="file"].btnCardSmall, a.btnCardSmall, a.btnCardAction, a.btnCardAction.ok, a.btnCardAction.nok, .btnSearchForm, .btnSearchFormG, .btnSearch, .btnUploadPic, .btnDefaultFile, form input[type="file"].btnDefaultFile,
 input[type="file"].btnDefaultFile {
   display: inline-block;
   border: 0;
@@ -8604,8 +8604,8 @@ ul.contentPlaceUL {
 .channelImgPlace {
   display: block;
   position: absolute;
-  top: 160px;
-  right: 40px;
+  top: 190px;
+  right: 60px;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -8616,7 +8616,7 @@ ul.contentPlaceUL {
   max-width: 6.875rem;
   height: 6.875rem;
   max-height: 6.875rem;
-  background-image: url(../images/imgBlank.jpg);
+  background-image: url(../images/profileUserImg.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -8661,9 +8661,9 @@ ul.contentPlaceUL {
 
 .channelHeaderImg {
   width: 100%;
-  height: 15rem;
-  max-height: 15rem;
-  background-image: url(../images/imgBlank.jpg);
+  height: 16.875rem;
+  max-height: 16.875rem;
+  background-image: url(../images/channelHeaderImg.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -8703,6 +8703,15 @@ ul.contentPlaceUL {
       -moz-opacity: 1;
       -khtml-opacity: 1;
       opacity: 1; }
+
+form input[type="file"].btnCardSmall, form input[type="file"].btnCardSmall, input[type="file"].btnCardSmall {
+  /* font: $fontSize*0.6 $fontDefault;
+	padding: rem-calc(6);
+	padding-top: rem-calc(12); */
+  cursor: pointer;
+  /* border-radius: rem-calc(17) 0 0 rem-calc(17);
+	-webkit-border-radius: rem-calc(17) 0 0 rem-calc(17);
+	-moz-border-radius: rem-calc(17) 0 0 rem-calc(17); */ }
 
 fieldset legend {
   color: rgba(0, 0, 0, 0.25);
@@ -10207,7 +10216,7 @@ input[type="text"].formInputDate {
   margin: 0;
   padding: 0; }
 
-.btnDefault, .btnAlarm, .btnAlarmExtend, .btnUnLock, .btnLock, .btnOk, .btnRe, .btnCancel, .btnEnter, .btnAdd, .btnAddFile, .btnAddFileXML, .btnReturn, .btnFormUp, .btnFormDefault, .btnFormSmall, .btnCardSmall, a.btnCardSmall, a.btnCardAction, a.btnCardAction.ok, a.btnCardAction.nok, .btnSearchForm, .btnSearchFormG, .btnSearch, .btnUploadPic, .btnDefaultFile, form input[type="file"].btnDefaultFile,
+.btnDefault, .btnAlarm, .btnAlarmExtend, .btnUnLock, .btnLock, .btnOk, .btnRe, .btnCancel, .btnEnter, .btnAdd, .btnAddFile, .btnAddFileXML, .btnReturn, .btnFormUp, .btnFormDefault, .btnFormSmall, .btnCardSmall, form input[type="file"].btnCardSmall, input[type="file"].btnCardSmall, a.btnCardSmall, a.btnCardAction, a.btnCardAction.ok, a.btnCardAction.nok, .btnSearchForm, .btnSearchFormG, .btnSearch, .btnUploadPic, .btnDefaultFile, form input[type="file"].btnDefaultFile,
 input[type="file"].btnDefaultFile {
   font-size: 0.9rem;
   display: block;
@@ -10234,22 +10243,22 @@ input[type="file"].btnDefaultFile {
   -moz-box-shadow: 0;
   margin: 0;
   padding: 0.625rem 0.625rem 0.25rem 0.625rem; }
-  .btnDefault .iconic, .btnAlarm .iconic, .btnAlarmExtend .iconic, .btnUnLock .iconic, .btnLock .iconic, .btnOk .iconic, .btnRe .iconic, .btnCancel .iconic, .btnEnter .iconic, .btnAdd .iconic, .btnAddFile .iconic, .btnAddFileXML .iconic, .btnReturn .iconic, .btnFormUp .iconic, .btnFormDefault .iconic, .btnFormSmall .iconic, .btnCardSmall .iconic, a.btnCardAction .iconic, .btnSearchForm .iconic, .btnSearchFormG .iconic, .btnSearch .iconic, .btnUploadPic .iconic, .btnDefaultFile .iconic, input[type="file"].btnDefaultFile .iconic {
+  .btnDefault .iconic, .btnAlarm .iconic, .btnAlarmExtend .iconic, .btnUnLock .iconic, .btnLock .iconic, .btnOk .iconic, .btnRe .iconic, .btnCancel .iconic, .btnEnter .iconic, .btnAdd .iconic, .btnAddFile .iconic, .btnAddFileXML .iconic, .btnReturn .iconic, .btnFormUp .iconic, .btnFormDefault .iconic, .btnFormSmall .iconic, .btnCardSmall .iconic, input[type="file"].btnCardSmall .iconic, a.btnCardAction .iconic, .btnSearchForm .iconic, .btnSearchFormG .iconic, .btnSearch .iconic, .btnUploadPic .iconic, .btnDefaultFile .iconic, input[type="file"].btnDefaultFile .iconic {
     width: 1em;
     height: 1em;
     vertical-align: middle;
     margin-right: 0.25em;
     margin-top: -2px; }
-  .btnDefault:hover, .btnAlarm:hover, .btnAlarmExtend:hover, .btnUnLock:hover, .btnLock:hover, .btnOk:hover, .btnRe:hover, .btnCancel:hover, .btnEnter:hover, .btnAdd:hover, .btnAddFile:hover, .btnAddFileXML:hover, .btnReturn:hover, .btnFormUp:hover, .btnFormDefault:hover, .btnFormSmall:hover, .btnCardSmall:hover, a.btnCardAction:hover, .btnSearchForm:hover, .btnSearchFormG:hover, .btnSearch:hover, .btnUploadPic:hover, .btnDefaultFile:hover, input[type="file"].btnDefaultFile:hover, .btnDefault:focus, .btnAlarm:focus, .btnAlarmExtend:focus, .btnUnLock:focus, .btnLock:focus, .btnOk:focus, .btnRe:focus, .btnCancel:focus, .btnEnter:focus, .btnAdd:focus, .btnAddFile:focus, .btnAddFileXML:focus, .btnReturn:focus, .btnFormUp:focus, .btnFormDefault:focus, .btnFormSmall:focus, .btnCardSmall:focus, a.btnCardAction:focus, .btnSearchForm:focus, .btnSearchFormG:focus, .btnSearch:focus, .btnUploadPic:focus, .btnDefaultFile:focus, input[type="file"].btnDefaultFile:focus {
+  .btnDefault:hover, .btnAlarm:hover, .btnAlarmExtend:hover, .btnUnLock:hover, .btnLock:hover, .btnOk:hover, .btnRe:hover, .btnCancel:hover, .btnEnter:hover, .btnAdd:hover, .btnAddFile:hover, .btnAddFileXML:hover, .btnReturn:hover, .btnFormUp:hover, .btnFormDefault:hover, .btnFormSmall:hover, .btnCardSmall:hover, input[type="file"].btnCardSmall:hover, a.btnCardAction:hover, .btnSearchForm:hover, .btnSearchFormG:hover, .btnSearch:hover, .btnUploadPic:hover, .btnDefaultFile:hover, input[type="file"].btnDefaultFile:hover, .btnDefault:focus, .btnAlarm:focus, .btnAlarmExtend:focus, .btnUnLock:focus, .btnLock:focus, .btnOk:focus, .btnRe:focus, .btnCancel:focus, .btnEnter:focus, .btnAdd:focus, .btnAddFile:focus, .btnAddFileXML:focus, .btnReturn:focus, .btnFormUp:focus, .btnFormDefault:focus, .btnFormSmall:focus, .btnCardSmall:focus, input[type="file"].btnCardSmall:focus, a.btnCardAction:focus, .btnSearchForm:focus, .btnSearchFormG:focus, .btnSearch:focus, .btnUploadPic:focus, .btnDefaultFile:focus, input[type="file"].btnDefaultFile:focus {
     background: #a03d6d;
     color: #FFF; }
-  .btnDefault .iconic *, .btnAlarm .iconic *, .btnAlarmExtend .iconic *, .btnUnLock .iconic *, .btnLock .iconic *, .btnOk .iconic *, .btnRe .iconic *, .btnCancel .iconic *, .btnEnter .iconic *, .btnAdd .iconic *, .btnAddFile .iconic *, .btnAddFileXML .iconic *, .btnReturn .iconic *, .btnFormUp .iconic *, .btnFormDefault .iconic *, .btnFormSmall .iconic *, .btnCardSmall .iconic *, a.btnCardAction .iconic *, .btnSearchForm .iconic *, .btnSearchFormG .iconic *, .btnSearch .iconic *, .btnUploadPic .iconic *, .btnDefaultFile .iconic *, input[type="file"].btnDefaultFile .iconic * {
+  .btnDefault .iconic *, .btnAlarm .iconic *, .btnAlarmExtend .iconic *, .btnUnLock .iconic *, .btnLock .iconic *, .btnOk .iconic *, .btnRe .iconic *, .btnCancel .iconic *, .btnEnter .iconic *, .btnAdd .iconic *, .btnAddFile .iconic *, .btnAddFileXML .iconic *, .btnReturn .iconic *, .btnFormUp .iconic *, .btnFormDefault .iconic *, .btnFormSmall .iconic *, .btnCardSmall .iconic *, input[type="file"].btnCardSmall .iconic *, a.btnCardAction .iconic *, .btnSearchForm .iconic *, .btnSearchFormG .iconic *, .btnSearch .iconic *, .btnUploadPic .iconic *, .btnDefaultFile .iconic *, input[type="file"].btnDefaultFile .iconic * {
     fill: #FFF;
     stroke: #FFF; }
     .btnDefault .iconic *.iconic-property-accent, .btnAlarm .iconic *.iconic-property-accent, .btnAlarmExtend .iconic *.iconic-property-accent, .btnUnLock .iconic *.iconic-property-accent, .btnLock .iconic *.iconic-property-accent, .btnOk .iconic *.iconic-property-accent, .btnRe .iconic *.iconic-property-accent, .btnCancel .iconic *.iconic-property-accent, .btnEnter .iconic *.iconic-property-accent, .btnAdd .iconic *.iconic-property-accent, .btnAddFile .iconic *.iconic-property-accent, .btnAddFileXML .iconic *.iconic-property-accent, .btnReturn .iconic *.iconic-property-accent, .btnFormUp .iconic *.iconic-property-accent, .btnFormDefault .iconic *.iconic-property-accent, .btnFormSmall .iconic *.iconic-property-accent, .btnCardSmall .iconic *.iconic-property-accent, a.btnCardAction .iconic *.iconic-property-accent, .btnSearchForm .iconic *.iconic-property-accent, .btnSearchFormG .iconic *.iconic-property-accent, .btnSearch .iconic *.iconic-property-accent, .btnUploadPic .iconic *.iconic-property-accent, .btnDefaultFile .iconic *.iconic-property-accent {
       fill: #FFF;
       stroke: #FFF; }
-  .btnDefault:hover, .btnAlarm:hover, .btnAlarmExtend:hover, .btnUnLock:hover, .btnLock:hover, .btnOk:hover, .btnRe:hover, .btnCancel:hover, .btnEnter:hover, .btnAdd:hover, .btnAddFile:hover, .btnAddFileXML:hover, .btnReturn:hover, .btnFormUp:hover, .btnFormDefault:hover, .btnFormSmall:hover, .btnCardSmall:hover, a.btnCardAction:hover, .btnSearchForm:hover, .btnSearchFormG:hover, .btnSearch:hover, .btnUploadPic:hover, .btnDefaultFile:hover, input[type="file"].btnDefaultFile:hover {
+  .btnDefault:hover, .btnAlarm:hover, .btnAlarmExtend:hover, .btnUnLock:hover, .btnLock:hover, .btnOk:hover, .btnRe:hover, .btnCancel:hover, .btnEnter:hover, .btnAdd:hover, .btnAddFile:hover, .btnAddFileXML:hover, .btnReturn:hover, .btnFormUp:hover, .btnFormDefault:hover, .btnFormSmall:hover, .btnCardSmall:hover, input[type="file"].btnCardSmall:hover, a.btnCardAction:hover, .btnSearchForm:hover, .btnSearchFormG:hover, .btnSearch:hover, .btnUploadPic:hover, .btnDefaultFile:hover, input[type="file"].btnDefaultFile:hover {
     box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.15), 0 4px 4px rgba(0, 0, 0, 0.15), 0 1px 2px -2px rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.15), 0 4px 4px rgba(0, 0, 0, 0.15), 0 1px 2px -2px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.15), 0 4px 4px rgba(0, 0, 0, 0.15), 0 1px 2px -2px rgba(0, 0, 0, 0.2);
@@ -10258,11 +10267,11 @@ input[type="file"].btnDefaultFile {
     -moz-transition: all 0.15s ease;
     -o-transition: all 0.15s ease;
     cursor: pointer; }
-  .btnDefault.custom-disabled, .custom-disabled.btnAlarm, .custom-disabled.btnAlarmExtend, .custom-disabled.btnUnLock, .custom-disabled.btnLock, .custom-disabled.btnOk, .custom-disabled.btnRe, .custom-disabled.btnCancel, .custom-disabled.btnEnter, .custom-disabled.btnAdd, .custom-disabled.btnAddFile, .custom-disabled.btnAddFileXML, .custom-disabled.btnReturn, .custom-disabled.btnFormUp, .custom-disabled.btnFormDefault, .custom-disabled.btnFormSmall, .custom-disabled.btnCardSmall, a.custom-disabled.btnCardAction, .custom-disabled.btnSearchForm, .custom-disabled.btnSearchFormG, .custom-disabled.btnSearch, .custom-disabled.btnUploadPic, .custom-disabled.btnDefaultFile, input.custom-disabled[type="file"].btnDefaultFile {
+  .btnDefault.custom-disabled, .custom-disabled.btnAlarm, .custom-disabled.btnAlarmExtend, .custom-disabled.btnUnLock, .custom-disabled.btnLock, .custom-disabled.btnOk, .custom-disabled.btnRe, .custom-disabled.btnCancel, .custom-disabled.btnEnter, .custom-disabled.btnAdd, .custom-disabled.btnAddFile, .custom-disabled.btnAddFileXML, .custom-disabled.btnReturn, .custom-disabled.btnFormUp, .custom-disabled.btnFormDefault, .custom-disabled.btnFormSmall, .custom-disabled.btnCardSmall, input.custom-disabled[type="file"].btnCardSmall, a.custom-disabled.btnCardAction, .custom-disabled.btnSearchForm, .custom-disabled.btnSearchFormG, .custom-disabled.btnSearch, .custom-disabled.btnUploadPic, .custom-disabled.btnDefaultFile, input.custom-disabled[type="file"].btnDefaultFile {
     opacity: 0.5;
     cursor: default;
     pointer-events: none; }
-  .btnDefault .icon, .btnAlarm .icon, .btnAlarmExtend .icon, .btnUnLock .icon, .btnLock .icon, .btnOk .icon, .btnRe .icon, .btnCancel .icon, .btnEnter .icon, .btnAdd .icon, .btnAddFile .icon, .btnAddFileXML .icon, .btnReturn .icon, .btnFormUp .icon, .btnFormDefault .icon, .btnFormSmall .icon, .btnCardSmall .icon, a.btnCardAction .icon, .btnSearchForm .icon, .btnSearchFormG .icon, .btnSearch .icon, .btnUploadPic .icon, .btnDefaultFile .icon, input[type="file"].btnDefaultFile .icon {
+  .btnDefault .icon, .btnAlarm .icon, .btnAlarmExtend .icon, .btnUnLock .icon, .btnLock .icon, .btnOk .icon, .btnRe .icon, .btnCancel .icon, .btnEnter .icon, .btnAdd .icon, .btnAddFile .icon, .btnAddFileXML .icon, .btnReturn .icon, .btnFormUp .icon, .btnFormDefault .icon, .btnFormSmall .icon, .btnCardSmall .icon, input[type="file"].btnCardSmall .icon, a.btnCardAction .icon, .btnSearchForm .icon, .btnSearchFormG .icon, .btnSearch .icon, .btnUploadPic .icon, .btnDefaultFile .icon, input[type="file"].btnDefaultFile .icon {
     display: inline-block;
     font: 150% "BYekan", Tahoma, "Arial", Gadget, sans-serif, "uicon";
     height: 2.125rem;
@@ -10273,7 +10282,7 @@ input[type="file"].btnDefaultFile {
     padding: 0;
     float: right; }
 
-.btnDefault.icon, .icon.btnAlarm, .icon.btnAlarmExtend, .icon.btnUnLock, .icon.btnLock, .icon.btnOk, .icon.btnRe, .icon.btnCancel, .icon.btnEnter, .icon.btnAdd, .icon.btnAddFile, .icon.btnAddFileXML, .icon.btnReturn, .icon.btnFormUp, .icon.btnFormDefault, .icon.btnFormSmall, .icon.btnCardSmall, a.icon.btnCardAction, .icon.btnSearchForm, .icon.btnSearchFormG, .icon.btnSearch, .icon.btnUploadPic, .icon.btnDefaultFile, input.icon[type="file"].btnDefaultFile {
+.btnDefault.icon, .icon.btnAlarm, .icon.btnAlarmExtend, .icon.btnUnLock, .icon.btnLock, .icon.btnOk, .icon.btnRe, .icon.btnCancel, .icon.btnEnter, .icon.btnAdd, .icon.btnAddFile, .icon.btnAddFileXML, .icon.btnReturn, .icon.btnFormUp, .icon.btnFormDefault, .icon.btnFormSmall, .icon.btnCardSmall, input.icon[type="file"].btnCardSmall, a.icon.btnCardAction, .icon.btnSearchForm, .icon.btnSearchFormG, .icon.btnSearch, .icon.btnUploadPic, .icon.btnDefaultFile, input.icon[type="file"].btnDefaultFile {
   display: inline-block;
   font: 150% "BYekan", Tahoma, "Arial", Gadget, sans-serif, "uicon";
   height: 2.125rem;
@@ -10575,13 +10584,13 @@ a.btnEffect {
       fill: #888888;
       stroke: #888888; }
 
-.btnFormDefault, .btnFormSmall, .btnCardSmall, a.btnCardSmall, a.btnCardAction, a.btnCardAction.ok, a.btnCardAction.nok {
+.btnFormDefault, .btnFormSmall, .btnCardSmall, form input[type="file"].btnCardSmall, input[type="file"].btnCardSmall, a.btnCardSmall, a.btnCardAction, a.btnCardAction.ok, a.btnCardAction.nok {
   background: #E6E9ED;
   color: #888888; }
-  .btnFormDefault:hover, .btnFormSmall:hover, .btnCardSmall:hover, a.btnCardAction:hover, .btnFormDefault:focus, .btnFormSmall:focus, .btnCardSmall:focus, a.btnCardAction:focus {
+  .btnFormDefault:hover, .btnFormSmall:hover, .btnCardSmall:hover, input[type="file"].btnCardSmall:hover, a.btnCardAction:hover, .btnFormDefault:focus, .btnFormSmall:focus, .btnCardSmall:focus, input[type="file"].btnCardSmall:focus, a.btnCardAction:focus {
     background: #bdc5d0;
     color: #888888; }
-  .btnFormDefault .iconic *, .btnFormSmall .iconic *, .btnCardSmall .iconic *, a.btnCardAction .iconic * {
+  .btnFormDefault .iconic *, .btnFormSmall .iconic *, .btnCardSmall .iconic *, input[type="file"].btnCardSmall .iconic *, a.btnCardAction .iconic * {
     fill: #888888;
     stroke: #888888; }
     .btnFormDefault .iconic *.iconic-property-accent, .btnFormSmall .iconic *.iconic-property-accent, .btnCardSmall .iconic *.iconic-property-accent, a.btnCardAction .iconic *.iconic-property-accent {
@@ -10592,7 +10601,7 @@ a.btnEffect {
   width: 2.3125rem;
   max-width: 2.3125rem; }
 
-.btnCardSmall, a.btnCardSmall, a.btnCardAction, a.btnCardAction.ok, a.btnCardAction.nok {
+.btnCardSmall, form input[type="file"].btnCardSmall, input[type="file"].btnCardSmall, a.btnCardSmall, a.btnCardAction, a.btnCardAction.ok, a.btnCardAction.nok {
   width: 2rem;
   max-width: 2rem;
   height: 2rem;
@@ -12055,3 +12064,184 @@ ul.gridCompList {
     clear: both; }
   .blockContentModal a {
     margin: 0 0.25rem !important; }
+
+/* DEMO 3 */
+.loader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: block;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border: none;
+  list-style: none;
+  z-index: 9999; }
+
+.loaderIn {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: inline-block;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border: none;
+  list-style: none;
+  z-index: 991; }
+
+.loader .bokeh {
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  display: block;
+  font-size: 70px;
+  text-align: center;
+  margin: 0px auto;
+  top: 17%;
+  left: 50%;
+  margin-left: -0.5em;
+  border-radius: 50%;
+  /* border: .01em solid rgba(150,150,150,0.1); */
+  border: none;
+  list-style: none;
+  z-index: 9999; }
+
+.loaderIn .bokeh {
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  display: block;
+  font-size: 70px;
+  text-align: center;
+  margin: 0px auto;
+  top: 43%;
+  left: 50%;
+  margin-left: -0.5em;
+  border-radius: 50%;
+  /* border: .01em solid rgba(150,150,150,0.1); */
+  border: none;
+  list-style: none;
+  z-index: 9999; }
+
+.channelImg .loaderIn .bokeh {
+  font-size: 40px !important;
+  top: 33% !important; }
+
+.loaderTxt {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  color: #999999;
+  font: 100% Mirza, Tahoma, Verdana, Geneva, sans-serif, uicon;
+  font-weight: 600;
+  text-align: center;
+  margin: 0px auto;
+  padding-top: 17%; }
+
+.loader .bokeh li, .loaderIn .bokeh li {
+  position: absolute;
+  width: .2em;
+  height: .2em;
+  border-radius: 50%; }
+
+.loader .bokeh li:nth-child(1), .loaderIn .bokeh li:nth-child(1) {
+  left: 50%;
+  top: 0;
+  margin: 0 0 0 -0.1em;
+  background: #00C176;
+  -webkit-transform-origin: 50% 250%;
+  transform-origin: 50% 250%;
+  -webkit-animation: rota 1.13s linear infinite, opa 3.67s ease-in-out infinite alternate;
+  animation: rota 1.13s linear infinite, opa 3.67s ease-in-out infinite alternate; }
+
+.loader .bokeh li:nth-child(2), .loaderIn .bokeh li:nth-child(2) {
+  top: 50%;
+  right: 0;
+  margin: -.1em 0 0 0;
+  background: #FF003C;
+  -webkit-transform-origin: -150% 50%;
+  transform-origin: -150% 50%;
+  -webkit-animation: rota 1.86s linear infinite, opa 4.29s ease-in-out infinite alternate;
+  animation: rota 1.86s linear infinite, opa 4.29s ease-in-out infinite alternate; }
+
+.loader .bokeh li:nth-child(3), .loaderIn .bokeh li:nth-child(3) {
+  left: 50%;
+  bottom: 0;
+  margin: 0 0 0 -0.1em;
+  background: #FABE28;
+  -webkit-transform-origin: 50% -150%;
+  transform-origin: 50% -150%;
+  -webkit-animation: rota 1.45s linear infinite, opa 5.12s ease-in-out infinite alternate;
+  animation: rota 1.45s linear infinite, opa 5.12s ease-in-out infinite alternate; }
+
+.loader .bokeh li:nth-child(4), .loaderIn .bokeh li:nth-child(4) {
+  top: 50%;
+  left: 0;
+  margin: -.1em 0 0 0;
+  background: #88C100;
+  -webkit-transform-origin: 250% 50%;
+  transform-origin: 250% 50%;
+  -webkit-animation: rota 1.72s linear infinite, opa 5.25s ease-in-out infinite alternate;
+  animation: rota 1.72s linear infinite, opa 5.25s ease-in-out infinite alternate; }
+
+@-webkit-keyframes rota {
+  from { }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes rota {
+  from { }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@-webkit-keyframes opa {
+  0% { }
+  12.0% {
+    opacity: 0.80; }
+  19.5% {
+    opacity: 0.88; }
+  37.2% {
+    opacity: 0.64; }
+  40.5% {
+    opacity: 0.52; }
+  52.7% {
+    opacity: 0.69; }
+  60.2% {
+    opacity: 0.60; }
+  66.6% {
+    opacity: 0.52; }
+  70.0% {
+    opacity: 0.63; }
+  79.9% {
+    opacity: 0.60; }
+  84.2% {
+    opacity: 0.75; }
+  91.0% {
+    opacity: 0.87; } }
+
+@keyframes opa {
+  0% { }
+  12.0% {
+    opacity: 0.80; }
+  19.5% {
+    opacity: 0.88; }
+  37.2% {
+    opacity: 0.64; }
+  40.5% {
+    opacity: 0.52; }
+  52.7% {
+    opacity: 0.69; }
+  60.2% {
+    opacity: 0.60; }
+  66.6% {
+    opacity: 0.52; }
+  70.0% {
+    opacity: 0.63; }
+  79.9% {
+    opacity: 0.60; }
+  84.2% {
+    opacity: 0.75; }
+  91.0% {
+    opacity: 0.87; } }
